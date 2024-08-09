@@ -1,0 +1,85 @@
+/* center-align submitted forms */
+.login-form {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+/* submit button */
+button.btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+/* OTP button */
+input[type=button] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Blog title header */
+.blog-header {
+    color: #057d1b;
+    text-align: left;
+}
+
+/* nav bar elements side-by-side */
+.header-child {
+    display: flex;
+    clear: both;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+/* submit button */
+nav {
+    border-bottom: 1px solid black;
+    margin-bottom: auto;
+}
+
+.form-header {
+    color: #4287f5;
+    text-align: center;
+}
+
+.blog {
+    color: white;
+    background-color: #80d7e8;
+    margin-top: 1%;
+    margin-left:1%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.blog-border {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#confirm-delete {
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    background-color: #e1e2e3;
+    height: 300px;
+    margin-top: -25%;
+    padding: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.card {
+    z-index: 0;
+    opacity: 1;
+    border-bottom: 1px solid black;
+}
+
+.center-header {
+    text-align: center;
+    margin: 10px;
+}
