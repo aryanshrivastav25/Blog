@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Your blogs{% endblock %}
+
+{% block body %}
+    <h1 class="blog-header center-header">Your blogs</h1>
+    {% for blog in blog_data %}
+    <div class="card">
+        <form>
+            <h5 class="card-header">{{ blog["username"].capitalize() }}</h5>
+            <input type="hidden" name="blog_id" class="card-text" value="{{ blog["blog_id"] }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ datetime.date.today() }}<br/>{{ datetime.datetime.now.hour }}-{{ datetime.datetime.now.minute }}-{{ datetime.datetime.now.second }}</h5>
+                <p class="card-text">{{ blog["blog"] }}</p>
+                {% if check_user == blog["username"] %}
+                    <button formaction="/edit" class="btn btn-primary" type="submit" style="float:left; display: flex; width:auto; margin-bottom: 5px; margin-right: 3px;">Edit Blog</button>
+                    <button formaction="/delete" class="btn btn-primary" type="submit" style="float:left; display: flex; width: auto; margin-bottom: 5px; margin-left: 3px;">Delete Blog</button>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+    {% endfor %}
+{% endblock %}

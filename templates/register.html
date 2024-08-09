@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <form class="login-form" action="/register" method="post">
+        <h1 class="form-header">Register</h1>
+        <div class="form-floating mb-3">
+            <input autocomplete="off" type="text" class="form-control disable" id="username" placeholder="Username" name="username" required>
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating">
+            <input autocomplete="off" type="password" class="form-control disable" id="floatingPassword" placeholder="Password" name="password" required>
+            <label for="floatingPassword">Password</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input autocomplete="off" type="password" class="form-control disable" id="floatingPassword" placeholder="Confirm Password" name="confirm_password" required>
+            <label for="floatingPassword">Confirm Password</label>
+        </div>
+        <button type="submit" class="btn btn-info">Register</button>
+    </form>
+{% endblock %}

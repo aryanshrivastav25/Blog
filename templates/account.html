@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Your Account{% endblock %}
+
+{% block body %}
+    <form action="/account" method="post">
+        <form class="login-form" action="/account" method="post">
+            <h1 class="form-header">Change password</h1>
+            <div class="form-floating mb-3">
+                <input autocomplete="off" type="password" class="form-control disable" id="floatingPassword" placeholder="Current password" name="current_password" required>
+                <label for="floatingPassword">Current Password</label>
+            </div>
+            <div class="form-floating">
+                <input autocomplete="off" type="password" class="form-control disable" id="floatingPassword" placeholder="Password" name="new_password" required>
+                <label for="floatingPassword">New Password</label>
+            </div>
+            <br>
+            <div class="form-floating">
+                <input autocomplete="off" type="password" class="form-control disable" id="floatingPassword" placeholder="Confirm Password" name="confirm_password" required>
+                <label for="floatingPassword">Confirm New Password</label>
+            </div>
+            <button type="submit" class="btn btn-info" style="height: auto; color: white;">Change password</button>
+        </form>
+    </form>
+{% endblock %}

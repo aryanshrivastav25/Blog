@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    <form class="login-form" action="/login" method="post">
+        <h1 class="form-header">Login</h1>
+        <div class="form-floating mb-3">
+            <input autocomplete="off" type="Username" class="form-control" id="floatingInput" placeholder="Username" name="username" required>
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating">
+            <input autocomplete="off" type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+            <label for="floatingPassword">Password</label>
+        </div>
+        <button type="submit" class="btn btn-info">Login</button>
+    </form>
+{% endblock %}

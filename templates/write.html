@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}Write your{% endblock %}
+
+{% block body %}
+    <form action="/write" method="post" class="login-form" style="padding: 30px; border: 1px solid #878b8c; border-radius: 50px;">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label blog-header"><h2>Write a Blog</h2></label>
+            <textarea autofocus autocomplete="off" name="blog" maxlength="3000" class="form-control disable" id="floatingInput" rows="12" placeholder="Write your blog" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 40px;">Post</button>
+    </form>
+{% endblock %}
